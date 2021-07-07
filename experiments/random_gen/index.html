@@ -1,42 +1,45 @@
 <!DOCTYPE HTML>
 <html>
-  <head>
-    <title>Bowswa's Random Generator</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="topnav">
-      <a href="../../index.html">Home</a>
-      <a href="../../forums.html">Forums</a>
-      <a href="../../about.html">About</a>
-      <a href="../../apps.html">A N' G</a>
-      <button id="info">Need Info?</button>
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>
-            Hello! If you are in this menu you are wondring how this thing works. Once you understand it is very simple.
-            As I add the features here I will Explain them. However right now things are not ready.
-          </p>
-        </div>
+
+<head>
+  <title>Bowswa's Random Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="topnav">
+    <a href="../../index.html">Home</a>
+    <a href="../../blog.html">Blog</a>
+    <a href="../../about.html">About</a>
+    <a href="../../apps.html">A N' G</a>
+    <button id="info">Need Info?</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>
+          Hello! If you are in this menu you are wondring how this thing works. Once you understand it is very simple.
+          As I add the features here I will Explain them. However right now things are not ready.
+        </p>
       </div>
-      <script>
-        var modal = document.getElementById('myModal');
-        var btn = document.getElementById('info');
-        var span = document.getElementsByClassName('close')[1];
-        btn.onclick = function () {
-          modal.style.display = 'block';
-        };
-        span.onclick = function () {
-          modal.style.display = 'none';
-        };
-        window.onclick = function (event) {
-          if (event.target == modal2) {
-            modal.style.display = 'none';
-          }
-        };
-      </script>
     </div>
-    <p>This page is about to be started! Stay tuned for a couple updates over the next few weeks!</p>
-  </body>
+    <script>
+      var modal = document.getElementById('myModal');
+      var btn = document.getElementById('info');
+      var span = document.getElementsByClassName('close')[1];
+      btn.onclick = function () {
+        modal.style.display = 'block';
+      };
+      span.onclick = function () {
+        modal.style.display = 'none';
+      };
+      window.onclick = function (event) {
+        if (event.target == modal2) {
+          modal.style.display = 'none';
+        }
+      };
+    </script>
+  </div>
+  <p>This page is about to be started! Stay tuned for a couple updates over the next few weeks!</p>
+</body>
+
 </html>
