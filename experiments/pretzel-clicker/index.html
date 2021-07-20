@@ -7,10 +7,10 @@
       let keysDown = {};
       window.onkeydown = function (keyboardshortcuts) {
         keysDown[keyboardshortcuts.key] = true;
-        if (keysDown['Control'] && keysDown['x']) {
+        if (keysDown['Control'] && keysDown['s']) {
           console.log('Game Saved!');
           save();
-        }else if (keysDown['Control'] && keysDown['v']) {
+        } else if (keysDown['Control'] && keysDown['v']) {
           console.log('Game Loaded!');
           load();
         }
@@ -20,7 +20,6 @@
       };
     </script>
   </head>
-
   <body>
     <div class="container">
       <div class="toppane">
@@ -32,31 +31,21 @@
             <a href="https://discord.gg/ntRb7Nw7Xt" target="_blank">Game Discord</a>
           </span>
           <div class="dropdown">
-          <span class="other-versions">
-            <span class="dropbtn">Other Versions:</span>
-            <div class="dropdown-content">
-              <a href="../index.html" id="live">Live</a>
-              <a href="./index.html" id="beta">Beta</a>
-            </div>
-            </div>
-          </span>
+            <span class="other-versions">
+              <span class="dropbtn">Other Versions:</span>
+              <div class="dropdown-content">
+                <a href="../index.html" id="live">Live</a>
+                <a href="./index.html" id="beta">Beta</a>
+              </div>
+            </span>
+          </div>
         </p>
       </div>
-      <!--<div class="divs"></div>-->
-
       <div class="leftpane">
         <p id="prtzelBank">Pretzels: 0</p>
-        <input
-          type="image"
-          class="box"
-          id="pretzel"
-          onclick="pretzelClicked()"
-          alt="Pretzel"
-          src="img/Pretzel.png"
-        />
+        <input type="image" class="box" id="pretzel" onclick="pretzelClicked()" alt="Pretzel" src="img/Pretzel.png" />
         <p id="version">Version:</p>
       </div>
-
       <div class="middlepane">
         <div id="middleButtons">
           <button class="menu buttons" id="settings" onclick="midSectionSettings()">Settings</button>
@@ -67,8 +56,8 @@
         <div id="middleContent">
         </div>
       </div>
-
       <div class="rightpane">
+        <p id="upgrade_tokens">Buy Upgrade Token: <span id="upgrade_token_price">Undefined. Please report on Discord if you see this often.</span><br><button class="buy disabled_buttons" onclick="buyUpgradeToken()">Buy</button></p><br>
         <p id="clicker_build">Clicker Buildings! <span id="clicker_build_amount">0 Owned</span></p>
         <p id="clicker">Clickers! <span id="clicker_amount">0 Owned</span></p>
         <p id="clicker_disc">Autoclicks the Pretzel every 10 seconds.</p>
@@ -85,7 +74,7 @@
         <button class="upgrade disabled_buttons" onclick="upgradeSlapper()">Upgrade</button>
         &NonBreakingSpace;
         <button class="downgrade disabled_buttons" onclick="downgradeSlapper()">Downgrade</button>
-        
+
         <br>
         <p id="grandma_build">Grandma Buildings! <span id="grandma_build_amount">0 Owned</span></p>
         <p id="grandma_bakers">Grandma Baker! <span id="grandma_baker_amount">0 Owned</span></p>
@@ -121,6 +110,7 @@
         <button class="upgrade disabled_buttons" onclick="upgradeGpTwister()">Upgrade</button>
         &NonBreakingSpace;
         <button class="downgrade disabled_buttons" onclick="downgradeGpTwister()">Downgrade</button>
+        <br>
       </div>
     </div>
     <script src="main.js"></script>
