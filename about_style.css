@@ -94,9 +94,20 @@ body {
 }
 
 p {
-    font-size: 25px;
+    font-size: 10px;
     /* font-weight: bold; */
-    padding: 100px;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 3px;
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 5px;
 }
 
 .a {
@@ -105,6 +116,23 @@ p {
 
 a {
     color: inherit;
+}
+
+.WhatILike {
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    /* text-transform: uppercase; */
+}
+
+.desc {
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 3px;
+    color: #03e9f4;
 }
 
 .content {
@@ -141,60 +169,38 @@ a {
     bottom: auto;
 }
 
-@media only screen and (max-width: 600px) {
-    .accordion {
-        text-align: center;
-    }
+
+/* Accordion */
+
+a {
+    color: inherit;
 }
 
-
-/* 
-        
-        .panel {
-            background-color: inherit;
-            border-radius: 10px;
-            overflow: hidden;
-            width: 50%;
-            font-size: 20px;
-            transition: max-height 0.2s ease-out;
-        }*/
-
-.accordion {
-    background-color: inherit;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 50%;
+button {
+    background: transparent;
     border: none;
-    text-align: left;
-    outline: none;
-    font-size: 25px;
-    transition: 0.4s;
-    font-family: 'Shadows Into Light', cursive;
-    color: white;
-    border-radius: 10px;
-}
-
-.active,
-.accordion:hover {
-    background: #99ffff;
-    color: black;
-}
-
-.panel {
-    padding: 0 18px;
-    background-color: inherit;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 50%;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
 }
 
 .right-plus {
     float: right;
     text-align: right;
+    color: white;
 }
+
+.accordion {
+    transition: 0.5s;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: inherit;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+
+/* End Accordion */
 
 .centered {
     scroll-behavior: smooth !important;

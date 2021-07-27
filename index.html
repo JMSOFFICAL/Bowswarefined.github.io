@@ -2,349 +2,366 @@
 <html>
 
 <head>
-  <!-- Styling made by The Ramenator -->
-  <title>Bowswa</title>
-  <meta name="keywords" content="Bowswa, Bowswa's, Bowswa Website">
-  <link rel="shortcut icon" href="media/favicon.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home_style.css">
+    <!-- Styling made by The Ramenator -->
+    <title>Bowswa</title>
+    <meta name="keywords" content="Bowswa, Bowswa's, Bowswa Website">
+    <link rel="shortcut icon" href="media/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This scroll detection script part is kinda broken right now. -->
+    <script>
+        var rootElement = document.documentElement;
+        var scrollToTopBtn = document.getElementById('scrl-btn');
+
+        function handleScroll() {
+            // Do something on scroll
+            var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+            if ((rootElement.scrollTop / scrollTotal) > 0.50) {
+                // Show button
+                scrollToTopBtn.classList.add("showBtn");
+            } else {
+                // Hide button
+                scrollToTopBtn.classList.remove("showBtn");
+            }
+        }
+
+        document.addEventListener("scroll", handleScroll);
+    </script>
+
 </head>
 
 <body>
-  <div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-    <div class="circle-container">
-      <div class="circle"></div>
-    </div>
-  </div>
-  <div class="parallax" style="background-image: url('media/Youtube_Banner V2.png')">
-    <!--Start NAV-->
+    <div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+        <div class="circle-container">
+            <div class="circle"></div>
+        </div>
+    </div>
+    <div class="parallax" style="background-image: url('media/Youtube_Banner V2.png')">
+        <!--Start NAV-->
+        <center>
+            <ul class="menu-bar">
+                <li><a class="a" href="index.html">Home</a></li>
+                <li><a class="a" href="blog.html">Blog</a></li>
+                <li><a class="a" href="about.html">About</a></li>
+                <li><a class="a" href="apps.html">A N' G</a></li>
+            </ul>
+        </center><br><br><br>
+        <!--End NAV-->
+    </div>
+    <!-- <a class="a centered" href="#content">&#x2193;</a> -->
+    <a href="#info" id="scrl-btn" class="scroll-down"></a>
+
     <center>
-      <ul class="menu-bar">
-        <li><a class="a" href="index.html">Home</a></li>
-        <li><a class="a" href="blog.html">Blog</a></li>
-        <li><a class="a" href="about.html">About</a></li>
-        <li><a class="a" href="apps.html">A N' G</a></li>
-      </ul>
-    </center><br><br><br>
-
-    <a href="#info" class="scroll-down"></a>
-
-  </div>
-  <!--End NAV-->
-  <!-- <a class="a centered" href="#content">&#x2193;</a> -->
-  <center>
-    <div id="content">
-      <p id="info">Hello! My name is Bowswa! I love to code, and am still learning more coding lanquages. I also make
-        content on my Youtube, Twitch, and Fruitlab. I have plenty of projects lined up for the future.</p>
-      <p>This page has missing elements! They will be available soon!</p>
-    </div>
-    <div id="footer">
-      <a class="a" href="https://www.youtube.com/channel/UCyHS9aOtHuGgBJtHmszyeBg" target="_blank"><img
-          src="media/youtube.png" alt="Youtube"></a>
-      <a class="a" href="https://www.twitch.tv/bowswa" target="_blank"><img src="media/twitch.png" alt="Twitch"></a>
-      <a class="a" href="https://twitter.com/opsylon23452" target="_blank"><img src="media/twitter.png"
-          alt="Twitter"></a>
-      <a class="a" href="https://discord.gg/ntRb7Nw7Xt" target="_blank"><img src="media/discord.png" alt="Discord"></a>
-    </div>
-  </center>
+        <div id="content" class="content">
+            <p id="info">Hello! My name is Bowswa! I love to code, and am still learning more coding lanquages. I also make content on my Youtube, Twitch, and Fruitlab. I have plenty of projects lined up for the future.</p>
+            <p>This page has missing elements! They will be available soon!</p>
+        </div>
+        <div id="footer">
+            <a class="a" href="https://www.youtube.com/channel/UCyHS9aOtHuGgBJtHmszyeBg" target="_blank"><img src="media/youtube.png" alt="Youtube"></a>
+            <a class="a" href="https://www.twitch.tv/bowswa" target="_blank"><img src="media/twitch.png" alt="Twitch"></a>
+            <a class="a" href="https://twitter.com/opsylon23452" target="_blank"><img src="media/twitter.png" alt="Twitter"></a>
+            <a class="a" href="https://discord.gg/ntRb7Nw7Xt" target="_blank"><img src="media/discord.png" alt="Discord"></a>
+        </div>
+    </center>
 </body>
 
 </html>
