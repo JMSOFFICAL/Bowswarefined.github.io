@@ -49,6 +49,14 @@ a {
     height: 100vh;
 }
 
+.disclaimer {
+  text-decoration: red;
+}
+
+.disclaimer::before {
+  content: "Disclaimer: ";
+}
+
 .parallax-2 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
