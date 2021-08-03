@@ -6,14 +6,6 @@
     padding: 0;
 }
 
-.disclaimer {
-  text-decoration: red;
-}
-
-.disclaimer::before {
-  content: "Disclaimer: ";
-}
-
 html {
     width: 100%;
     height: 100%;
