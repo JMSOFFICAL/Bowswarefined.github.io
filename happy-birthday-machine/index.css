@@ -221,6 +221,7 @@ body {
     border-radius: 10px;
     height: 74vh;
     overflow: scroll;
+    overflow-x: auto;
 }
 
 .login-box2 h2 {
