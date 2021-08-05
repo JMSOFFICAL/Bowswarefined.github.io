@@ -119,6 +119,7 @@ body {
     width: 400px;
     height: 74vh;
     overflow: scroll;
+    overflow-x: hidden;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, .5);
