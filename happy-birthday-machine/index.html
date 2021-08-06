@@ -1,182 +1,167 @@
 <!DOCTYPE html>
-<html>
 <!--CSS, custom colors, all cakes, custom fonts, other bug fixes, and audible screeches by The Ramenator-->
 <!-- Considerable amounts of JS, font idea, custom colors idea and framework, and cake idea by Bowswa -->
-
-<head>
+<html>
+  <head>
     <title>Bowswa's Happy BDay Machine</title>
     <link rel="shortcut icon" href="media/Birthday_Caik.png">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+      .toosmall {
+        display: none;
+      }
+      @media only screen and (max-height: 300px) {
+        .page-content {
+          display: none;
+        }
         .toosmall {
-            display: none;
+          display: block;
         }
-        
-        @media only screen and (max-height: 300px) {
-            .page-content {
-                display: none;
-            }
-            .toosmall {
-                display: block;
-            }
+      }
+      @media only screen and (max-width: 599px) {
+        .login-box {
+          width: 100%;
+          top: 40vh;
+          left: 50%;
+          padding: 10px;
+          height: 60vh;
+          overflow: scroll;
         }
-        
-        @media only screen and (max-width: 599px) {
-            .login-box {
-                width: 100%;
-                top: 40vh;
-                left: 50%;
-                padding: 10px;
-                height: 60vh;
-                overflow: scroll;
-            }
-            .login-box2 {
-                width: 100%;
-                padding: 10px;
-                top: 110vh;
-                left: 50%;
-                height: 60vh;
-                overflow: scroll;
-            }
+        .login-box2 {
+          width: 100%;
+          padding: 10px;
+          top: 110vh;
+          left: 50%;
+          height: 60vh;
+          overflow: scroll;
         }
-        
-        @media only screen and (min-width: 600px) and (max-width: 850px) {
-            /* Login Box 1 */
-            .login-box {
-                position: absolute;
-                top: 50%;
-                left: 25%;
-                width: 40vw;
-                padding: 40px;
-                height: 85vh;
-                overflow: scroll;
-                transform: translate(-50%, -50%);
-                background: rgba(0, 0, 0, .5);
-                box-sizing: border-box;
-                box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-                border-radius: 10px;
-            }
-            /* Font Stuff */
-            body,
-            span,
-            input,
-            .colorOptions,
-            p,
-            a,
-            .login-box,
-            .login-box form a,
-            select {
-                font-size: 10px;
-            }
-            p {
-                padding: 0;
-            }
-            /*Login Box 2*/
-            .login-box2 {
-                position: absolute;
-                top: 50%;
-                overflow: scroll;
-                left: 75%;
-                height: 85vh;
-                width: 40vw;
-                padding: 40px;
-                transform: translate(-50%, -50%);
-                background: rgba(0, 0, 0, .5);
-                box-sizing: border-box;
-                box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
-                border-radius: 10px;
-            }
+      }
+      @media only screen and (min-width: 600px) and (max-width: 850px) {
+        .login-box {
+          position: absolute;
+          top: 50%;
+          left: 25%;
+          width: 40vw;
+          padding: 40px;
+          height: 85vh;
+          overflow: scroll;
+          transform: translate(-50%, -50%);
+          background: rgba(0, 0, 0, .5);
+          box-sizing: border-box;
+          box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+          border-radius: 10px;
         }
+        /* Font Stuff */
+        body,
+        span,
+        input,
+        .colorOptions,
+        p,
+        a,
+        .login-box,
+        .login-box form a,
+        select {
+          font-size: 10px;
+        }
+        p {
+          padding: 0;
+        }
+        .login-box2 {
+          position: absolute;
+          top: 50%;
+          overflow: scroll;
+          left: 75%;
+          height: 85vh;
+          width: 40vw;
+          padding: 40px;
+          transform: translate(-50%, -50%);
+          background: rgba(0, 0, 0, .5);
+          box-sizing: border-box;
+          box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+          border-radius: 10px;
+        }
+      }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <br>
-    <!-- MENU -->
     <div id="myNav" class="overlay">
-
-
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
-        <div class="overlay-content">
-            <a href="../../index.html">Home</a>
-            <a href="../../forums.html">Forums</a>
-            <a href="../../about.html">About</a>
-            <a href="../../apps.html">A N' G</a>
-
-        </div>
-
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../../index.html">Home</a>
+        <a href="../../forums.html">Forums</a>
+        <a href="../../about.html">About</a>
+        <a href="../../apps.html">A N' G</a>
+      </div>
     </div>
-
-
     <span onclick="openNav()">
-
-
-        <div class="menu"></div>
-        <div class="menu"></div>
-        <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
     </span>
     <center>
-        <div class="page-content">
-            <!---End Of Menu--->
-            <div class="login-box">
-                <h2>Information</h2>
-                <form>
-                    <center>
-                        <div class="user-box">
-                            <input type="text" id="user" name="" maxlength="30" minlength="1" required="">
-                            <label>BDay Name</label>
-                        </div>
-                        <p>Colors:</p><br>
-                        <input id="color1" class="colorOptions" type="color" value="#00FF33">
-                        <input id="color2" class="colorOptions" type="color" value="#0091FF"> <br>
-                        <span class="colorOptions" onclick="setDefaultColor()">Use Default Colors</span><br>
-                        <a onclick="submit()" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span> Submit
-                        </a>
-
-                    </center>
-                </form>
-            </div>
-            <div class="login-box2">
-                <h2>Information Pg 2</h2>
-                <form>
-                    <center>
-                        <div class="user-box">
-                            <input type="text" id="font-in" name="" required="">
-                            <label>Custom Font</label>
-                        </div>
-                        <select onclick="setCake()" name="cakes" id="cakes">
-                        <option value="null" selected="selected" disabled>Cake Type</option>
-                        <option value="1">Chocolate Cake</option>
-                        <option value="2">Platter Cake</option>
-                        <option value="3">Strawberry Cake</option>
-                        <option value="4">Vanilla Cake</option>
-                        <option value="5">Chocolate Fondue Cake</option>
-                        <option value="6">Slice Of Cake</option>
-                    </select><br><br><br><br>
-                        <img class="cake-prev" id="cake-prev" src="Chocolate.png">
-                        <br><br>
-
-                        <a class="dir-link" href="birthday.html">Direct Link to Birthday Site</a><br>
-                    </center>
-                </form>
-            </div>
+      <div class="page-content">
+        <div class="login-box">
+          <h2>Information</h2>
+          <form>
+            <center>
+              <div class="user-box">
+                <input type="text" id="user" name="" maxlength="15" required="">
+                <label>BDay Name</label>
+              </div>
+              <div class="user-box">
+                <input type="text" id="user2" name="" maxlength="15" required="">
+                <label>BDay Name2</label>
+              </div>
+              <div class="user-box">
+                <input type="text" id="user3" name="" maxlength="15" required="">
+                <label>BDay Name3</label>
+              </div>
+              <p>Colors:</p><br>
+              <input id="color1" class="colorOptions" type="color" value="#00FF33">
+              <input id="color2" class="colorOptions" type="color" value="#0091FF"> <br>
+              <span class="colorOptions" onclick="setDefaultColor()">Use Default Colors</span><br>
+              <a onclick="submit()" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> Submit
+              </a>
+            </center>
+          </form>
         </div>
-        <div class="toosmall">
-            <h1>Yikes!</h1>
-            <p>Your screen height is too small for this page! Please rotate your screen or switch to another device.</p>
-            <p>PC is reccomended. This site is a wreck on mobile and it will probably be a while until I figure out how to fix it.</p>
+        <div class="login-box2">
+          <h2>Information Pg 2</h2>
+          <form>
+            <center>
+              <div class="user-box">
+                <input type="text" id="font-in" name="" required="">
+                <label>Custom Font</label>
+              </div>
+              <select onclick="setCake()" name="cakes" id="cakes">
+                <option value="null" selected="selected" disabled>Cake Type</option>
+                <option value="1">Chocolate Cake</option>
+                <option value="2">Platter Cake</option>
+                <option value="3">Strawberry Cake</option>
+                <option value="4">Vanilla Cake</option>
+                <option value="5">Chocolate Fondue Cake</option>
+                <option value="6">Slice Of Cake</option>
+              </select><br><br><br><br>
+              <img class="cake-prev" id="cake-prev" src="Chocolate.png">
+              <br><br>
+              <a class="dir-link" href="birthday.html">Direct Link to Birthday Site</a><br>
+            </center>
+          </form>
         </div>
-        <script src="index.js">
-        </script>
+      </div>
+      <div class="toosmall">
+        <h1>Yikes!</h1>
+        <p>Your screen height is too small for this page! Please rotate your screen or switch to another device.</p>
+        <p>PC is reccomended. This site is a wreck on mobile and it will probably be a while until I figure out how to fix it.</p>
+      </div>
+      <script src="index.js"></script>
     </center>
-</body>
-
+  </body>
 </html>

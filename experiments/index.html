@@ -310,10 +310,10 @@
     </div>
     <center>
       <ul class="menu-bar">
-        <li><a class="a" href="index.html">Home</a></li>
-        <li><a class="a" href="forums.html">Forums</a></li>
-        <li><a class="a" href="about.html">About</a></li>
-        <li><a class="a" href="apps.html">A N' G</a></li>
+        <li><a class="a" href="../index.html">Home</a></li>
+        <li><a class="a" href="../forums.html">Forums</a></li>
+        <li><a class="a" href="../about.html">About</a></li>
+        <li><a class="a" href="../apps.html">A N' G</a></li>
       </ul>
     </center><br><br><br>
     <center>
@@ -339,11 +339,27 @@
       <a href="random_gen/index.html">Link Here!</a>
     </div><br><br>
     <div id="footer">
-      <a class="a" href="https://www.youtube.com/channel/UCyHS9aOtHuGgBJtHmszyeBg" target="_blank"><img src="media/youtube.png" alt="Youtube"></a>
-      <a class="a" href="https://www.twitch.tv/bowswa" target="_blank"><img src="media/twitch.png" alt="Twitch"></a>
-      <a class="a" href="https://twitter.com/opsylon23452" target="_blank"><img src="media/twitter.png" alt="Twitter"></a>
-      <a class="a" href="https://discord.gg/ntRb7Nw7Xt" target="_blank"><img src="media/discord.png" alt="Discord"></a>
+      <a class="a" href="https://www.youtube.com/channel/UCyHS9aOtHuGgBJtHmszyeBg" target="_blank"><img src="../media/youtube.png" alt="Youtube"></a>
+      <a class="a" href="https://www.twitch.tv/bowswa" target="_blank"><img src="../media/twitch.png" alt="Twitch"></a>
+      <a class="a" href="https://twitter.com/opsylon23452" target="_blank"><img src="../media/twitter.png" alt="Twitter"></a>
+      <a class="a" href="https://discord.gg/ntRb7Nw7Xt" target="_blank"><img src="../media/discord.png" alt="Discord"></a>
     </div>
     </center>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
