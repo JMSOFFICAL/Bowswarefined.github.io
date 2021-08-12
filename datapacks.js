@@ -24,16 +24,16 @@ function oneSeventeenPacks() {
     '<br><br>' +
     '<button class="accordion">Loot Boxes<span class="right-plus">+</span></button>' +
     '<div class="panel">' +
-      '<p>Loot Boxes Datapack adds a drop to fishing, mob kills, and more that generates random loot. Generation one' +
+      'Loot Boxes Datapack adds a drop to fishing, mob kills, and more that generates random loot. Generation one' +
       'allows fishing. Generation Two is currently in testing on my twitch channel with a hobbit series. This is where' +
-      'all updates are tested.</p>' +
+      'all updates are tested.<br>' +
       '<a href="datapacks/Gen One Lootboxes.zip" download>Download Here!</a>' +
     '</div>' +
     '<br><br>' +
     '<button class="accordion">Afk Display V1.1.1<span class="right-plus">+</span></button>' +
     '<div class="panel">' +
       'Afk Display V1.1.0 is a vanilla tweaks datapack. I added a small feature that i plan on expanding upon and have' +
-      'released it in this update.' +
+      'released it in this update.<br>' +
       '<a href="datapacks/afk display v1.1.1 - 1.17.zip" download>Download Here!</a>' +
     '</div>' +
     '<br><br>' +
@@ -42,7 +42,7 @@ function oneSeventeenPacks() {
       'The Ender Fight Vanilla+ Pack V1.0.0 is a pack that gives a new armor set and a new strategy to the ender dragon' +
       'fight.' +
       'Just one armor piece blows a full neterite set out of the water. However it is such a rare drop I wouldn\'t expect' +
-      'a drop any time soon.' +
+      'a drop any time soon.<br>' +
       '<a href="datapacks/Ender Dragon Fight v1.0.0 - 1.17.zip" download>Download Here!</a>' +
     '</div>';
   document.getElementById("middleContent").innerHTML = seventeenContent;
