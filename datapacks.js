@@ -18,7 +18,7 @@ function oneSeventeenPacks() {
     '<div class="panel"><br> The Dungeons Datapack is a pack that revamps the vanilla minecraft dungeon. It is currently' +
       'in beta stages and will be getting frequent updates.<br>' +
       '<a href="" style="text-decoration-line: line-through;">Link Here!</a><span>' +
-        '<p>Under a small pre-release revamp cus I had mild insparation to make this not suck. Release soon!</p>' +
+        'Under a small pre-release revamp cus I had mild insparation to make this not suck. Release soon!' +
       '</span>' +
     '</div>' +
     '<br><br>' +
