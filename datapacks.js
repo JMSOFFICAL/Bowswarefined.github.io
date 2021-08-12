@@ -9,7 +9,9 @@ function oneSixteenPacks() {
   document.getElementById("middleContent").innerHTML = sixteenContent;
   document.getElementById("v1.16").setAttribute('style', 'font-weight: bold;');
   document.getElementById("v1.17").setAttribute('style', 'font-weight: normal');
-}
+  listener();
+};
+
 function oneSeventeenPacks() {
   seventeenContent =
     '<button class="accordion">Dungeons<span class="right-plus">+</span></button>' +
@@ -46,6 +48,24 @@ function oneSeventeenPacks() {
   document.getElementById("middleContent").innerHTML = seventeenContent;
   document.getElementById("v1.17").setAttribute('style', 'font-weight: bold;');
   document.getElementById("v1.16").setAttribute('style', 'font-weight: normal');
+  listener();
+};
+
+function listener() {
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
 }
 
 window.onload = oneSeventeenPacks();
