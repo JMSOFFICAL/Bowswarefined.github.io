@@ -3,7 +3,7 @@ function oneSixteenPacks() {
     '<button class="accordion">Afk Display V1.1.1<span class="right-plus">+</span></button>' +
     '<div class="panel">' +
       'Afk Display V1.1.0 is a vanilla tweaks datapack. I added a small feature that i plan on expanding upon and have' +
-      'released it in this update.' +
+      'released it in this update.<br>' +
       '<a href="datapacks/afk display v1.1.1 - 1.16.zip" download>Download Here!</a>' +
     '</div>';
   document.getElementById("middleContent").innerHTML = sixteenContent;
@@ -17,7 +17,7 @@ function oneSeventeenPacks() {
     '<button class="accordion">Dungeons<span class="right-plus">+</span></button>' +
     '<div class="panel"><br> The Dungeons Datapack is a pack that revamps the vanilla minecraft dungeon. It is currently' +
       'in beta stages and will be getting frequent updates.<br>' +
-      '<a href="" style="text-decoration-line: line-through;">Link Here!</a><span>' +
+      '<a href="" style="text-decoration-line: line-through;">Link Here!</a><br><span>' +
         'Under a small pre-release revamp cus I had mild insparation to make this not suck. Release soon!' +
       '</span>' +
     '</div>' +
