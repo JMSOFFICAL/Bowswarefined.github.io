@@ -361,10 +361,7 @@
     <script>
       function webLoad() {
         /*Declare Variables*/
-        var bDayName;
-        var bDayName2;
-        var bDayName3;
-        var bDayName_default = "Name Here";
+        var bDayName = localStorage.getItem('BdayPerson');
         var color1;
         var color1_default = "#FF0000";
         var color2;
@@ -379,9 +376,6 @@
           document.getElementById('bday').setAttribute('src', songs[randomSong]);
           var cake = localStorage.getItem('cake');
           /*Local Storage*/
-          bDayName = localStorage.getItem('BdayPerson');
-          bDayName2 = localStorage.getItem('BdayPerson2');
-          bDayName3 = localStorage.getItem('BdayPerson3');
           color1 = localStorage.getItem('color1');
           color2 = localStorage.getItem('color2');
           /*Custom font*/
@@ -391,15 +385,8 @@
             localStorage.setItem('font', font_default);
           }
           if (!localStorage.getItem('BdayPerson')) {
-            localStorage.setItem('BdayPerson', bDayName_default);
-            bDayName = bDayName_default;
-          } else if (!localStorage.getItem('BdayPerson2')) {
-            document.getElementById("and1").style.display = "none";
-            document.getElementById("BDayName2").style.display = "none";
-          //} else if (!localStorage.getItem('BdayPerson3')) {
-            //document.getElementById("and2").style.display = "none";
-            //document.getElementById("BDayName3").style.display = "none";
-          } else if (!localStorage.getItem('color1')) {
+            alert('Error! Name did not save!')
+          }else if (!localStorage.getItem('color1')) {
             localStorage.setItem('color1', color1_default);
             color1 = color1_default;
           } else if (!localStorage.getItem('color2')) {
@@ -1323,14 +1310,12 @@ h1 span {
 
         function removeBounce() {
             /*Declare Variables*/
-            var bDayName;
-            var bDayName_default = "Name Here";
+            var bDayName = localStorage.getItem('BdayPerson');
             var color1;
             var color1_default = "#FF0000";
             var color2;
             var color2_default = "#0000FF"
                 /*Local Storage*/
-            bDayName = localStorage.getItem('BdayPerson');
             color1 = localStorage.getItem('color1');
             color2 = localStorage.getItem('color2');
 
