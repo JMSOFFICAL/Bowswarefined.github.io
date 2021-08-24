@@ -3,6 +3,7 @@
 
 <head>
   <title>Bowswa's Random Generator</title>
+  <meta name="keywords" content="Random Number Generator, Random Generator">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,7 +16,7 @@
     <button id="info">Need Info?</button>
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        <span class="close" id="spanClose">&times;</span>
         <p>
           Hello! If you are in this menu you are wondring how this thing works. Once you understand it is very simple.
           As I add the features here I will Explain them. However right now things are not ready.
@@ -25,21 +26,26 @@
     <script>
       var modal = document.getElementById('myModal');
       var btn = document.getElementById('info');
-      var span = document.getElementsByClassName('close')[1];
+      var span = document.getElementById('spanClose');
       btn.onclick = function () {
         modal.style.display = 'block';
       };
       span.onclick = function () {
         modal.style.display = 'none';
       };
-      window.onclick = function (event) {
-        if (event.target == modal2) {
-          modal.style.display = 'none';
-        }
-      };
     </script>
   </div>
-  <p>This page is about to be started! Stay tuned for a couple updates over the next few weeks!</p>
+  <center>
+    <button>Random Number Generator</button>
+  </center>
+  <center>
+    <p>Generate a random number from one to a number of your choosing.</p>
+    <p id="number">000</p>
+    <p>Please tell me a maximum number.</p>
+    <input type="number" id="maxNum"><br><br>
+    <button onclick="generateRandomNum()">Generate a number!</button>
+  </center>
+  <script src="index.js"></script>
 </body>
 
 </html>
