@@ -255,8 +255,8 @@ function reset() {
         grandpaTwisterPPS = 10;
 
         gameVersion = displayGameVersion;
-        updateNormal();
-        setInterval(addPPS, 1000);
+        save();
+        load();
     } else if (resetConfirm === false) {
         alert('Good Choice M8!');
     }
@@ -302,6 +302,7 @@ function errReset() {
     gameVersion = displayGameVersion;
     updateNormal();
     setInterval(addPPS, 1000);
+    save();
     load();
 };
 
