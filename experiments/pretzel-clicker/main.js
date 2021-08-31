@@ -110,13 +110,12 @@ function Bsave() {
  * \\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 function load() {
-    if (window.location.href.indexOf('/beta') > -1) beta = true;
+    if (window.location.href.indexOf('/beta') > -1) {
+      beta = true;
+      console.log(beta);
+    }
 
-    if (!gameVersion) {
-        errReset();
-        save();
-        return load();
-    } else if (beta === true) {
+    if (beta === true) {
         var verBox = document.getElementById("beta");
         verBox.style.display = "hidden";
 
@@ -163,51 +162,51 @@ function load() {
             return alert('ERROR 002: LOAD ERROR - Your save seems to have been sent from the future... good to know we invented Time Machines! We have reset this save as it is likely to be broken.');
         }
     } else if (beta === false) {
-        if (!BgameVersion) {
-            errReset();
-            return console.log('ERROR 002: LOAD ERROR - No game version was set. Reseting now!');
-        } else if (gameVersion <= 0.04) {
-            errReset();
-            return alert('ERROR 002: LOAD ERROR - You are not allowed to import from this version. Your save has been reset.');
-        } else if (gameVersion = displayGameVersion) {
-            var verBox = document.getElementById("live");
-            verBox.style.display = "none";
+      if (!BgameVersion) {
+        errReset();
+        return console.log('ERROR 002: LOAD ERROR - No game version was set. Reseting now!');
+      } else if (gameVersion <= 0.04) {
+        errReset();
+        return alert('ERROR 002: LOAD ERROR - You are not allowed to import from this version. Your save has been reset.');
+      } else if (gameVersion > displayGameVersion) {
+        errReset();
+        return alert('ERROR 002: LOAD ERROR - Your save seems to have been sent from the future... good to know we invented Time Machines! We have reset this save as it is likely to be broken.');
+      } else {
+        var verBox = document.getElementById("live");
+        verBox.style.display = "none";
 
-            pretzelBank = localStorage.getItem('pretzelBank');
-            totalPretzelCount = localStorage.getItem('totalPretzelCount');
-            upgradeTokens = localStorage.getItem('upgradeTokens');
-            totalUpgradeTokens = localStorage.getItem('totalUpgradeTokens');
-            pretzelBank = parseInt(pretzelBank);
-            totalPretzelCount = parseInt(totalPretzelCount);
-            upgradeTokens = parseInt(upgradeTokens);
-            totalUpgradeTokens = parseInt(upgradeTokens);
+        pretzelBank = localStorage.getItem('pretzelBank');
+        totalPretzelCount = localStorage.getItem('totalPretzelCount');
+        upgradeTokens = localStorage.getItem('upgradeTokens');
+        totalUpgradeTokens = localStorage.getItem('totalUpgradeTokens');
+        pretzelBank = parseInt(pretzelBank);
+        totalPretzelCount = parseInt(totalPretzelCount);
+        upgradeTokens = parseInt(upgradeTokens);
+        totalUpgradeTokens = parseInt(upgradeTokens);
 
-            highestPPS = localStorage.getItem('highestPPS');
-            highestPPS = parseInt(highestPPS);
+        highestPPS = localStorage.getItem('highestPPS');
+        highestPPS = parseInt(highestPPS);
 
-            clickerAmount = localStorage.getItem('clickerAmount');
-            slapperAmount = localStorage.getItem('slapperAmount');
-            clickerAmount = parseInt(clickerAmount);
-            slapperAmount = parseInt(slapperAmount);
-            clickerBuildAmount = clickerAmount + slapperAmount;
+        clickerAmount = localStorage.getItem('clickerAmount');
+        slapperAmount = localStorage.getItem('slapperAmount');
+        clickerAmount = parseInt(clickerAmount);
+        slapperAmount = parseInt(slapperAmount);
+        clickerBuildAmount = clickerAmount + slapperAmount;
 
-            grandmaBakerAmount = localStorage.getItem('grandmaBakerAmount');
-            grandmaTwisterAmount = localStorage.getItem('grandmaTwisterAmount');
-            grandmaBakerAmount = parseInt(grandmaBakerAmount);
-            grandmaTwisterAmount = parseInt(grandmaTwisterAmount);
-            grandmaBuildAmount = grandmaBakerAmount + grandmaTwisterAmount;
+        grandmaBakerAmount = localStorage.getItem('grandmaBakerAmount');
+        grandmaTwisterAmount = localStorage.getItem('grandmaTwisterAmount');
+        grandmaBakerAmount = parseInt(grandmaBakerAmount);
+        grandmaTwisterAmount = parseInt(grandmaTwisterAmount);
+        grandmaBuildAmount = grandmaBakerAmount + grandmaTwisterAmount;
 
-            grandpaBakerAmount = localStorage.getItem('grandpaBakerAmount');
-            grandpaTwisterAmount = localStorage.getItem('grandpaTwisterAmount');
-            grandpaBakerAmount = parseInt(grandpaBakerAmount);
-            grandpaTwisterAmount = parseInt(grandpaTwisterAmount);
-            grandpaBuildAmount = grandpaBakerAmount + grandpaTwisterAmount;
+        grandpaBakerAmount = localStorage.getItem('grandpaBakerAmount');
+        grandpaTwisterAmount = localStorage.getItem('grandpaTwisterAmount');
+        grandpaBakerAmount = parseInt(grandpaBakerAmount);
+        grandpaTwisterAmount = parseInt(grandpaTwisterAmount);
+        grandpaBuildAmount = grandpaBakerAmount + grandpaTwisterAmount;
 
-            return updateAll();
-        } else if (gameVersion > displayGameVersion) {
-            errReset();
-            return alert('ERROR 002: LOAD ERROR - Your save seems to have been sent from the future... good to know we invented Time Machines! We have reset this save as it is likely to be broken.');
-        }
+        return updateAll();
+      }
     }
 };
 
