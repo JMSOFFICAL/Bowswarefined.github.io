@@ -329,6 +329,7 @@ function updateNormal() {
 function updatePretzels() {
     document.getElementById('prtzelBank').innerHTML = 'Pretzels: ' + pretzelBank.toFixed(1);
     document.getElementById('upgrade_token_amount').innerHTML = 'Upgrade Tokens: ' + upgradeTokens;
+    document.getElementById('upgrade_token_price').innerHTML = upgradeTokenPrice;
 };
 
 function updateBuildings() {
