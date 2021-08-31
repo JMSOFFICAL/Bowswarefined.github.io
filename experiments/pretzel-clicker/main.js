@@ -58,6 +58,7 @@ var BgameVersion = localStorage.getItem('BgameVersion');
 
 function save() {
     if (window.location.href.indexOf('/beta') > -1) beta = true;
+    console.log(beta);
 
     if (beta = true) Bsave();
     else if (beta = false) Nsave();
