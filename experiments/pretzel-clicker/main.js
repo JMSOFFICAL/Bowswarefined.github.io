@@ -451,14 +451,14 @@ function pretzelsPSCalc() {
     var grandpaBakerAddMath = 0;
     var grandpaTwisterAddMath = 0;
 
-    if (clickerAmount === 0) return console.log('0 clickers');
+    if (clickerAmount = 0) return console.log('0 clickers');
     else if (clickerAmount >= 1) {
         clickerAddMath = clickerAmount * .1;
     } else {
         console.log('ERROR 003: CALCULATION ERROR - Clickers did not calculate properly!');
         alert('Please buy or sell a Clicker! An unknown error has occured. Please report in discord if this continues!');
     }
-    if (slapperAmount === 0) return console.log('0 slappers');
+    if (slapperAmount = 0) return console.log('0 slappers');
     else if (slapperAmount >= 1) {
         slapperAddMath = slapperAmount * .2;
     } else {
@@ -466,14 +466,14 @@ function pretzelsPSCalc() {
         alert('Please upgrade a Clicker to a Slapper! An unknown error has occured. Please report in discord if this continues!');
     }
 
-    if (grandmaBakerAmount === 0) return console.log('0 grandma bakers');
+    if (grandmaBakerAmount = 0) return console.log('0 grandma bakers');
     else if (grandmaBakerAmount >= 1) {
         grandmaBakerAddMath = grandmaBakerAmount;
     } else {
         console.log('ERROR 003: CALCULATION ERROR - Grandma Bakers did not calculate properly!');
         alert('Please buy or sell a Grandma Baker! An unknown error has occured. Please report in discord if this continues!');
     }
-    if (grandmaTwisterAmount === 0) return console.log('0 grandma twisters');
+    if (grandmaTwisterAmount = 0) return console.log('0 grandma twisters');
     else if (grandmaTwisterAmount >= 1) {
         grandmaTwisterAddMath = grandmaTwisterAmount * 1.5;
     } else {
@@ -481,7 +481,7 @@ function pretzelsPSCalc() {
         alert('Please upgrade a Grandma Baker to a Grandma Twister! An unknown error has occured. Please report in discord if this continues!');
     }
 
-    if (grandpaBakerAmount === 0) return console.log('0 grandpa bakers');
+    if (grandpaBakerAmount = 0) return console.log('0 grandpa bakers');
     else if (grandpaBakerAmount >= 1) {
         grandpaBakerPPG = 5 + grandpaBakerSimpMs;
         grandpaBakerAddMath = grandpaBakerAmount * grandpaBakerPPG;
@@ -489,7 +489,7 @@ function pretzelsPSCalc() {
         console.log('ERROR 003: CALCULATION ERROR - Grandpa Bakers did not calculate properly!');
         alert('Please buy or sell a Grandpa Baker! An unknown error has occured. Please report in discord if this continues!');
     }
-    if (grandpaTwisterAmount === 0) return console.log('0 grandpa twisters');
+    if (grandpaTwisterAmount = 0) return console.log('0 grandpa twisters');
     else if (grandpaTwisterAmount >= 1) {
         grandpaTwisterPPG = 6 + grandpaTwisterSimpMs;
         grandpaTwisterAddMath = grandpaTwisterAmount * grandpaTwisterPPG;
