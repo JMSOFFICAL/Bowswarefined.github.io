@@ -328,6 +328,7 @@ function updateNormal() {
 
 function updatePretzels() {
     document.getElementById('prtzelBank').innerHTML = 'Pretzels: ' + pretzelBank.toFixed(1);
+    document.getElementById('upgrade_token_amount').innerHTML = 'Upgrade Tokens: ' + upgradeTokens;
 };
 
 function updateBuildings() {
@@ -513,9 +514,17 @@ function addPPS() {
 function calcTopPPS() {
     if (PPS > highestPPS) {
         highestPPS = PPS;
+        setPPSPrices();
     } else {
         return;
     }
+};
+
+function setPPSPrices() {
+  var PPM = highestPPS * 60;
+  if (PPM * 10 > upgradeTokenPrice) {
+    upgradeTokenPrice = PPM * 10;
+  }else return;
 };
 
 /**\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -606,6 +615,13 @@ function midSectionStats() {
 /**\\\\\\\\\\\\\\\\\\\\\\\\\\\
  * Building Purchasing Things
  * \\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+function buyUpgTok() {
+  if (pretzelBank >= upgradeTokenPrice) {
+    pretzelBank = pretzelBank - upgradeTokenPrice;
+    upgradeTokens = upgradeTokens + 1;
+  }
+}
 
 function buyClicker() {
     if (pretzelBank < clickerPrice) {
