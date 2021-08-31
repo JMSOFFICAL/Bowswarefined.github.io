@@ -72,6 +72,8 @@
         </div>
         <div class="leftpane">
           <p id="prtzelBank">Pretzels: 0</p>
+          <p id="upgrade_token_amount">Upgrade Tokens: 0</p>
+          <p id="upgrade_tokens">Buy Upgrade Token: <span id="upgrade_token_price">Undefined</span><br><button class="buy buttons" onclick="buyUpgradeToken()">Buy</button></p><br>
           <input type="image" class="box" id="pretzel" onclick="pretzelClicked()" alt="Pretzel" src="img/Pretzel.png" />
           <p id="version">Version:</p>
         </div>
@@ -85,7 +87,6 @@
           <div id="middleContent"></div>
         </div>
         <div class="rightpane">
-          <p id="upgrade_tokens">Buy Upgrade Token: <span id="upgrade_token_price">Undefined. Please report on Discord if you see this often.</span><br><button class="buy disabled_buttons" onclick="buyUpgradeToken()">Buy</button></p><br>
           <p id="clicker_build">Clicker Buildings! <span id="clicker_build_amount">0 Owned</span></p>
           <p id="clicker">Clickers! <span id="clicker_amount">0 Owned</span></p>
           <p id="clicker_disc">Autoclicks the Pretzel every 10 seconds.</p>
@@ -96,7 +97,7 @@
           <br>
           <p id="slappers">Slappers! <span id="slapper_amount">0 Owned</span></p>
           <p id="slapper_disc">An upgraded Clicker autoslaps the pretzel every 5 seconds.</p>
-          <p id="slapper_price">Cost: 2 UT</p>
+          <p id="slapper_price">Cost: 1 UT</p>
           <button class="upgrade disabled_buttons" onclick="upgradeSlapper()">Upgrade</button> &NonBreakingSpace;
           <button class="downgrade disabled_buttons" onclick="downgradeSlapper()">Downgrade</button>
 
