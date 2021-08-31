@@ -57,12 +57,8 @@ var BgameVersion = localStorage.getItem('BgameVersion');
  * \\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 function save() {
-    if (window.location.href.indexOf('/beta') > -1) beta = true;
-    console.log(beta);
-
     if (beta = true) Bsave();
     else if (beta = false) Nsave();
-    else console.log('Error 001: SAVE ERROR - Something happened with the beta save check!')
 };
 
 function Nsave() {
@@ -113,8 +109,8 @@ function Bsave() {
 function load() {
     if (window.location.href.indexOf('/beta') > -1) {
       beta = true;
-      console.log(beta);
     }
+    console.log(beta);
 
     if (beta === true) {
         var verBox = document.getElementById("beta");
