@@ -2,7 +2,6 @@ function setCake() {
     //close
     var e = document.getElementById("cakes");
     var value = e.options[e.selectedIndex].value;
-    localStorage.setItem("cake", value);
     if (value === "1") {
         document.getElementById("cake-prev").src = "Chocolate.png";
     } else if (value === "2") {
@@ -33,34 +32,17 @@ function submit() {
         requiredValues = requiredValues + 1;
     } else {
         alert('Something went wrong. Please check the console.');
-        console.log('Please join the discord server and report this error: ERROR CODE 11111-0: LN 34.js')
+        console.log('Please join the discord server and report this error: ERROR CODE 11111-0: LN 35.js')
     }
     //colors
     var color1 = document.getElementById('color1').value;
     var color2 = document.getElementById('color2').value;
 
-    var defaultColorCount = 0;
+    //cakes
+    var e = document.getElementById("cakes");
+    var value = e.options[e.selectedIndex].value;
+    localStorage.setItem("cake", value);
 
-    if (color1 = '#00FF33') {
-        defaultColorCount = defaultColorCount + 1;
-    } else if (!(color1 = '#00FF33')) {
-        requiredValues = requiredValues + 1;
-    }
-
-    if (color2 = '#0091FF') {
-        defaultColorCount = defaultColorCount + 1;
-    } else if (!(color2 = '#0091FF')) {
-        requiredValues = requiredValues + 1;
-    }
-
-    if (defaultColorCount = 2) {
-        defaultColorConfirm = confirm('You are using the default colors. Are you sure you want to do this?');
-        if (defaultColorConfirm === true) {
-            requiredValues = requiredValues + 2;
-        } else if (defaultColorConfirm === false) {
-            return alert('You have decided to use custom colors. Submit again if this was a mistake!');
-        }
-    } else return;
     //font
     var font = document.getElementById('font-in').value;
     //submit all
@@ -82,7 +64,7 @@ function submit() {
         location.replace('http://adfoc.us/53726676042623'); //ad link.
     } else {
         alert('Something Went Wrong! Please Check Console!');
-        console.log('Please join the discord server and report this error: ERROR CODE 22222-0: LN 77.js');
+        console.log('Please join the discord server and report this error: ERROR CODE 22222-0: LN 67.js');
     }
 };
 
@@ -99,34 +81,17 @@ function dirSubmit() {
         requiredValues = requiredValues + 1;
     } else {
         alert('Something went wrong. Please check the console.');
-        console.log('Please join the discord server and report this error: ERROR CODE 11111-1: LN 94.js')
+        console.log('Please join the discord server and report this error: ERROR CODE 11111-1: LN 84.js')
     }
     //colors
     var color1 = document.getElementById('color1').value;
     var color2 = document.getElementById('color2').value;
 
-    var defaultColorCount = 0;
+    //cakes
+    var e = document.getElementById("cakes");
+    var value = e.options[e.selectedIndex].value;
+    localStorage.setItem("cake", value);
 
-    if (color1 = '#00FF33') {
-        defaultColorCount = defaultColorCount + 1;
-    } else if (!(color1 = '#00FF33')) {
-        requiredValues = requiredValues + 1;
-    }
-
-    if (color2 = '#0091FF') {
-        defaultColorCount = defaultColorCount + 1;
-    } else if (!(color2 = '#0091FF')) {
-        requiredValues = requiredValues + 1;
-    }
-
-    if (defaultColorCount = 2) {
-        defaultColorConfirm = confirm('You are using the default colors. Are you sure you want to do this?');
-        if (defaultColorConfirm === true) {
-            requiredValues = requiredValues + 2;
-        } else if (defaultColorConfirm === false) {
-            return alert('You have decided to use custom colors. Submit again if this was a mistake!');
-        }
-    } else return;
     //font
     var font = document.getElementById('font-in').value;
     //submit all
@@ -148,7 +113,7 @@ function dirSubmit() {
         location.replace('birthday.html'); //direct link
     } else {
         alert('Something Went Wrong! Please Check Console!');
-        console.log('Please join the discord server and report this error: ERROR CODE 22222-1: LN 137.js');
+        console.log('Please join the discord server and report this error: ERROR CODE 22222-1: LN 116.js');
     }
 };
 

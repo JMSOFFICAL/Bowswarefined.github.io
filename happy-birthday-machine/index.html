@@ -1,26 +1,24 @@
 <!DOCTYPE html>
-<html>
 <!--CSS, custom colors, cakes, and other bug fixes by The Ramenator-->
 <!-- Massive amounts of JS, fonts, custom colors idea and framework, and cake idea by Bowswa -->
-
-<head>
+<html>
+  <head>
     <title>Bowswa's Happy BDay Machine</title>
     <meta name="keywords" content="Happy Birthday Machine, Happy Birthday Card Maker, Happy Birthday Maker, Happy Birthday Music, Bowswa's Happy Birthday Machine, HBM, B's HBM">
     <link rel="shortcut icon" href="media/Birthday_Caik.png">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-</head>
-
-<body>
+  </head>
+  <body>
     <br>
     <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="../../index.html">Home</a>
-            <a href="../../forums.html">Forums</a>
-            <a href="../../about.html">About</a>
-            <a href="../../apps.html">A N' G</a>
-        </div>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="../../index.html">Home</a>
+        <a href="../../forums.html">Forums</a>
+        <a href="../../about.html">About</a>
+        <a href="../../apps.html">A N' G</a>
+      </div>
     </div>
     <span onclick="openNav()">
       <div class="menu"></div>
@@ -28,70 +26,75 @@
       <div class="menu"></div>
     </span>
     <center>
-        <script>
-            /* Open when someone clicks on the span element */
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
-            /* Close when someone clicks on the "x" symbol inside the overlay */
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
-        </script>
-        <div class="login-box">
-            <h2>Information</h2>
-            <form>
-                <center>
-                    <div class="user-box">
-                        <input type="text" id="user" name="" maxlength="15" required>
-                        <label>BDay Name</label>
-                    </div>
-                    <div class="user-box">
-                        <input type="text" id="user2" name="" maxlength="15" required>
-                        <label>BDay Name2</label>
-                    </div>
-                    <div class="user-box">
-                        <input type="text" id="user3" name="" maxlength="15" required>
-                        <label>BDay Name3</label>
-                    </div>
-                    <p>Colors:</p><br>
-                    <input id="color1" class="colorOptionsBox" type="color" value="#00FF33">
-                    <input id="color2" class="colorOptionsBox" type="color" value="#0091FF"> <br>
-                    <span class="colorOptions" onclick="setDefaultColor()">Use Default Colors</span><br>
-                    <a onclick="submit()">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span> Submit
-                    </a>
-                </center>
-            </form>
-        </div>
-        <div class="login-box2">
-            <h2>Information Pg 2</h2>
-            <form>
-                <center>
-                    <div class="user-box">
-                        <input type="text" id="font-in" name="" required="">
-                        <label>Custom Font</label>
-                    </div>
-                    <select onclick="setCake()" name="cakes" id="cakes">
-              <option value="null" selected="selected" disabled>Cake Type</option>
-              <option value="1">Chocolate Cake</option>
-              <option value="2">Platter Cake</option>
-              <option value="3">Strawberry Cake</option>
-              <option value="4">Vanilla Cake</option>
+      <script>
+        /* Open when someone clicks on the span element */
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        /* Close when someone clicks on the "x" symbol inside the overlay */
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+      </script>
+      <div class="login-box">
+        <h2>Information</h2>
+        <form>
+          <center>
+            <div class="user-box">
+              <input type="text" id="user" name="" maxlength="15" required>
+              <label>BDay Name</label>
+            </div>
+            <div class="user-box">
+              <input type="text" id="user2" name="" maxlength="15" required>
+              <label>BDay Name2</label>
+            </div>
+            <div class="user-box">
+              <input type="text" id="user3" name="" maxlength="15" required>
+              <label>BDay Name3</label>
+            </div>
+            <p>Colors:</p><br>
+            <input id="color1" class="colorOptionsBox" type="color" value="#00FF33">
+            <input id="color2" class="colorOptionsBox" type="color" value="#0091FF"> <br>
+            <span class="colorOptions" onclick="setDefaultColor()">Use Default Colors</span><br>
+            <a onclick="submit()">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span> Submit
+            </a>
+          </center>
+        </form>
+      </div>
+      <div class="login-box2">
+        <h2>Information Pg 2</h2>
+        <form>
+          <center>
+            <div class="user-box">
+              <input type="text" id="font-in" name="" required="">
+              <label>Custom Font</label>
+            </div>
+            <select onclick="setCake()" name="cakes" id="cakes">
+              <option value="1" selected="selected" disabled>Cake Type</option>
+              <option value="1">Chocolate 3-Layer Cake</option>
+              <option value="2">Vanilla Platter Cake</option>
+              <option value="3">Strawberry 3-Layer Cake</option>
+              <option value="4">Vanilla 3-Layer Cake</option>
               <option value="5">Chocolate Fondue Cake</option>
-              <option value="6">Slice O'Cake</option>
+              <option value="6">Chocolate Slice O'Cake</option>
             </select><br><br><br><br>
-                    <img class="cake-prev" id="cake-prev" src="Chocolate.png">
-                    <br><br>
-                    <a class="dir-link" onclick="dirSubmit()">Direct Link</a><br>
-                </center>
-            </form>
-        </div>
+            <select name="flavors" id="flavors">
+                <option value="null" selected="selected" disabled>Cake Flavor</option>
+                <option value="1" disabled>Chocolate</option>
+                <option value="2" disabled>Vanilla</option>
+                <option value="3" disabled>Strawberry</option>
+              </select><br><br><br><br>
+            <img class="cake-prev" id="cake-prev" src="Chocolate.png"></img>
+            <br><br>
+            <a class="dir-link" onclick="dirSubmit()">Direct Link</a><br>
+          </center>
+        </form>
+      </div>
     </center>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
