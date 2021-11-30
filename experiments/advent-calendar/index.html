@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Advent Calendar 2021</title>
+  </head>
+  <body>
+    <h1>How to use this?</h1>
+    <p>
+      This is a customizable advent calendar for the year of 2021. It is an experimental project, so it may not be the best it can be.
+      If you have any suggestions, please let me know in the discord: <a href="https://discord.gg/ntRb7Nw7Xt">#advent-calendar</a>.
+      <br>
+      To get started with the calendar, please put some items in the "Items" section. We reccomend at least five items, but we support any amount.
+      After that, click the button below to generate each day. You can only generate each day once, so be careful.
+      <br>
+      Just in case you make a mistake, well you have a problem. Mistake support is coming soon.
+      This project will update once a year, for every advent calendar. The next update will be in 2022.
+      A couple style changes might be made this year, but no real changes will be made.
+      <br><br>
+    </p>
+    <h1>Input List</h1>
+    <p id="list">
+      <input type="text" id="task1" value="">
+      <span id="remove">
+        <button class="button" id="remove" onclick="removeListItem(1)">Remove</button>
+        <span id="error"></span>
+        <button class="button" id="add" onclick="addListItem(2)">Add</button>
+      </span>
+    </p>
+    <h1>Advent Calendar</h1>
+    <p>
+      <button class="generate" id="day1" onclick="generate(1)">Generate Day 1</button>
+      <p class="output" id="day1-output"></p>
+    </p>
+    <p>
+      <button class="generate" id="day2" onclick="generate(2)">Generate Day 2</button>
+      <p class="output" id="day2-output"></p>
+    </p>
+    <p>
+      <button class="generate" id="day3" onclick="generate(3)">Generate Day 3</button>
+      <p class="output" id="day3-output"></p>
+    </p>
+    <p>
+      <button class="generate" id="day4" onclick="generate(4)">Generate Day 4</button>
+      <p class="output" id="day4-output"></p>
+    </p>
+    <p>
+      <button class="generate" id="day5" onclick="generate(5)">Generate Day 5</button>
+      <p class="output" id="day5-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day6" onclick="generate(6)">Generate Day 6</button>
+        <p class="output" id="day6-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day7" onclick="generate(7)">Generate Day 7</button>
+        <p class="output" id="day7-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day8" onclick="generate(8)">Generate Day 8</button>
+        <p class="output" id="day8-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day9" onclick="generate(9)">Generate Day 9</button>
+        <p class="output" id="day9-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day10" onclick="generate(10)">Generate Day 10</button>
+        <p class="output" id="day10-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day11" onclick="generate(11)">Generate Day 11</button>
+        <p class="output" id="day11-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day12" onclick="generate(12)">Generate Day 12</button>
+        <p class="output" id="day12-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day13" onclick="generate(13)">Generate Day 13</button>
+        <p class="output" id="day13-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day14" onclick="generate(14)">Generate Day 14</button>
+        <p class="output" id="day14-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day15" onclick="generate(15)">Generate Day 15</button>
+        <p class="output" id="day15-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day16" onclick="generate(16)">Generate Day 16</button>
+        <p class="output" id="day16-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day17" onclick="generate(17)">Generate Day 17</button>
+        <p class="output" id="day17-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day18" onclick="generate(18)">Generate Day 18</button>
+        <p class="output" id="day18-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day19" onclick="generate(19)">Generate Day 19</button>
+        <p class="output" id="day19-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day20" onclick="generate(20)">Generate Day 20</button>
+        <p class="output" id="day20-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day21" onclick="generate(21)">Generate Day 21</button>
+        <p class="output" id="day21-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day22" onclick="generate(22)">Generate Day 22</button>
+        <p class="output" id="day22-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day23" onclick="generate(23)">Generate Day 23</button>
+        <p class="output" id="day23-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day24" onclick="generate(24)">Generate Day 24</button>
+        <p class="output" id="day24-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="day25" onclick="generate(25)">Generate Day 25</button>
+        <p class="output" id="day25-output"></p>
+    </p>
+    <h1>12 Days Of Christmas</h1>
+    <p>
+        <button class="generate" id="12day1" onclick="">Generate First Day Coming Soon!</button>
+        <p class="output" id="12-day1-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day2" onclick="">Generate Second Day Coming Soon!</button>
+        <p class="output" id="12-day2-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day3" onclick="">Generate Third Day Coming Soon!</button>
+        <p class="output" id="12-day3-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day4" onclick="">Generate Fourth Day Coming Soon!</button>
+        <p class="output" id="12-day4-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day5" onclick="">Generate Fifth Day Coming Soon!</button>
+        <p class="output" id="12-day5-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day6" onclick="">Generate Sixth Day Coming Soon!</button>
+        <p class="output" id="12-day6-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day7" onclick="">Generate Seventh Day Coming Soon!</button>
+        <p class="output" id="12-day7-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day8" onclick="">Generate Eighth Day Coming Soon!</button>
+        <p class="output" id="12-day8-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day9" onclick="">Generate Ninth Day Coming Soon!</button>
+        <p class="output" id="12-day9-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day10" onclick="">Generate Tenth Day Coming Soon!</button>
+        <p class="output" id="12-day10-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day11" onclick="">Generate Eleventh Day Coming Soon!</button>
+        <p class="output" id="12-day11-output"></p>
+    </p>
+    <p>
+        <button class="generate" id="12day12" onclick="">Generate Twelfth Day Coming Soon!</button>
+        <p class="output" id="12-day12-output"></p>
+    </p>
+    <script src="./index.js"></script>
+  </body>
+</html>
