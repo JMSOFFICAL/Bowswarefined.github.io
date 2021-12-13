@@ -117,21 +117,6 @@ a {
     }
 }
 
-.parallax {
-    /* Full height */
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-.parallax-2 {
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
 #content {
     height: auto;
 }
