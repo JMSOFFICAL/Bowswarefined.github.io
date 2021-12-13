@@ -6,6 +6,13 @@
     padding: 0;
 }
 
+.link-box {
+    max-width: 7%;
+    max-height: 7%;
+    background-color: #444;
+    color: #99ffff;
+}
+
 html {
     width: 100%;
     height: 100%;
