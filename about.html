@@ -1,27 +1,27 @@
 <!DOCTYPE HTML>
 <html>
-
-<head>
+  <head>
     <title>About Bowswa</title>
     <meta name="keywords" content="About Bowswa, Minecraft Nerd Gang, Minecraft Nerd, Nerd, Who is Bowswa">
-    <link rel="stylesheet" href="about_style.css">
     <link rel="shortcut icon" href="media/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="about_style.css">
     <style>
-        p {
-            font-size: 25px;
-            /* font-weight: bold; */
-            font-family: 'Shadows Into Light', cursive;
-        }
+      p {
+        font-size: 25px;
+        /* font-weight: bold; */
+        font-family: 'Shadows Into Light', cursive;
+      }
     </style>
-</head>
-
-<body>
+  </head>
+  <body>
     <!--dots-->
     <div>
-        <div class="circle-container">
-            <div class="circle"></div>
-        </div>
+      <div class="circle-container">
+        <div class="circle"></div>
+      </div>
         <div class="circle-container">
             <div class="circle"></div>
         </div>
@@ -321,15 +321,15 @@
         </div>
     </div>
     <div class="parallax" style="background-image: url('media/profile_picture.png')">
-        <!--Start NAV-->
-        <center>
-            <ul class="menu-bar">
-                <li><a class="a" href="index.html">Home</a></li>
-                <li><a class="a" href="blog.html">Blog</a></li>
-                <li><a class="a current" href="about.html">About</a></li>
-                <li><a class="a" href="apps.html">A N' G</a></li>
-            </ul>
-        </center><br><br><br>
+      <!--Start NAV-->
+      <center>
+        <ul class="menu-bar">
+          <li><a class="a" href="index.html">Home</a></li>
+          <li><a class="a" href="blog.html">Blog</a></li>
+          <li><a class="a current" href="about.html">About</a></li>
+          <li><a class="a" href="apps.html">A N' G</a></li>
+        </ul>
+      </center><br><br><br>
     </div>
     <a href="#info" class="scroll-down"></a>
     <center>
@@ -383,30 +383,31 @@
                 <p class="desc">I do not feel that I am ready to share this much on the internet. When I do it will be posted here.</p>
             </div><br><br>
         </div>
-        <div id="footer">
-            <a class="a" href="https://www.youtube.com/channel/UCyHS9aOtHuGgBJtHmszyeBg" target="_blank"><img src="media/youtube.png" alt="Youtube"></a>
-            <a class="a" href="https://www.twitch.tv/bowswa" target="_blank"><img src="media/twitch.png" alt="Twitch"></a>
-            <a class="a" href="https://twitter.com/opsylon23452" target="_blank"><img src="media/twitter.png" alt="Twitter"></a>
-            <a class="a" href="https://discord.gg/ntRb7Nw7Xt" target="_blank"><img src="media/discord.png" alt="Discord"></a>
-        </div>
     </center>
+    
+    <!-- Footer -->
+    <center><div id="footer">
+      <a id="footer-yt" href="https://www.youtube.com/c/Bowswa" target="_blank"><img class="footer-image" src="media/youtube.png" alt="My YouTube image link"></a>
+      <a id="footer-twitch" href="https://www.twitch.tv/bowswa" target="_blank"><img class="footer-image" src="media/twitch.png" alt="My Twitch image link"></a>
+      <a id="footer-twitter" href="https://twitter.com/opsylon23452" target="_blank"><img class="footer-image" src="media/twitter.png" alt="My Twitter image link"></a>
+      <a id="footer-discord" href="https://discord.gg/ntRb7Nw7Xt" target="_blank"><img class="footer-image" src="media/discord.png" alt="My Discord image link without hover"><img class="footer-image" id="ft-dc-hover" src="media/discord_2.png" alt="My Discord image link with hover"></a>
+    </div></center>
     <!-- https://stackoverflow.com/questions/37340135/show-hide-hover-css-animation -->
     <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
+      var acc = document.getElementsByClassName("accordion");
+      var i;
 
-        for (i = 0; i < acc.length; i++) {
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var panel = this.nextElementSibling;
-                if (panel.style.maxHeight) {
-                    panel.style.maxHeight = null;
-                } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                }
-            });
-        }
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
     </script>
-</body>
-
+  </body>
 </html>
