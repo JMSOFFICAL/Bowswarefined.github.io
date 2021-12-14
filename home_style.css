@@ -6,6 +6,17 @@
     padding: 0;
 }
 
+#discord-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.discord-footer:hover #discord-top {
+    display: inline;
+}
+
 .link-box {
     max-width: 17%;
     max-height: 17%;
