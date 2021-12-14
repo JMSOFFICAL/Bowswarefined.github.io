@@ -1,0 +1,21 @@
+.footer-image {
+  width: 64px;
+  height: 64px;
+}
+
+#footer-discord {
+    display: inline-block;
+    position: relative;
+    
+}
+
+#ft-dc-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#footer-discord:hover #ft-dc-hover {
+    display: inline;
+}
