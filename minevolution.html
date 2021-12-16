@@ -2,25 +2,22 @@
 <html>
   <head>
     <!-- Styling made by The Ramenator -->
-    <title>Bowswa's Minevolution</title>
+    <!-- Page Data -->
+    <title>Minevolution</title>
     <meta name="keywords" content="Minevolution, minevolution leveled up, minevolution evolution, bowswa's minevolution">
     <link rel="shortcut icon" href="media/mv_favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Things -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <!-- Style Sheets -->
+    <link rel="stylesheet" href="stylesheets/minevolution.css"
+    <link rel="stylesheet" href="stylesheets/bubbles.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
     <link rel="stylesheet" href="home_style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-      .disclaimer {
-        text-decoration: red;
-      }
-      .disclaimer::before {
-        content: "Disclaimer: ";
-      }
-    </style>
   </head>
   <body>
+    <!-- Glowy Orbs -->
     <div>
       <div class="circle-container">
         <div class="circle"></div>
@@ -323,6 +320,7 @@
         <div class="circle"></div>
       </div>
     </div>
+    <!-- NavBar -->
     <center>
       <ul class="menu-bar">
         <li><a class="a" href="index.html">Home</a></li>
@@ -334,10 +332,11 @@
     <center>
       <h1>Minevolution History</h1>
     </center>
+    <!-- Content Tabs-->
     <center>
       <button class="accordion">TheVoid's Idea<span class="right-plus">+</span></button>
       <div class="panel"><br>
-        <span style="color: red">Disclaimer: AM GOING OFF OF PUBLIC DATA FOR THIS SECTION. THIS IS BECAUSE THEVOID HAS BEEN OFFLINE SINCE 2015 AND IS NOT ABLE TO FILL IN!</span><br>
+        <span class="disclaimer">I AM GOING OFF OF PUBLIC DATA FOR THIS SECTION. THIS IS BECAUSE THEVOID HAS BEEN OFFLINE SINCE 2015 AND IS NOT ABLE TO FILL IN!</span><br>
         It all started back sometime in 2014. A CurseForge user known as TheVoid wanted to test the limits
         of the game. He took the efficiency enchantment. Out of this came a minigame idea. A game about
         mining faster and fas... Wait this is prisons! Anyways, I assume the idea evolved as the map was built,
@@ -346,7 +345,7 @@
       <br><br>
       <button class="accordion">A Youtuber Enters The Chat...<span class="right-plus">+</span></button>
       <div class="panel"><br>
-        <span style="color: red">Disclaimer: I AM GOING OFF OF PUBLIC DATA FOR THIS SECTION. THIS IS BECAUSE THEVOID HAS BEEN OFFLINE SINCE 2015 AND IS NOT ABLE TO FILL IN!</span><br>
+        <span class="disclaimer">Disclaimer: I AM GOING OFF OF PUBLIC DATA FOR THIS SECTION. THIS IS BECAUSE THEVOID HAS BEEN OFFLINE SINCE 2015 AND IS NOT ABLE TO FILL IN!</span><br>
         At some point in the process the map is suggested to LogDotZip. He starts playing it.
         By the end of the series, Log has an unreleased version of the map. However because the
         map was built in a version of the game that was very buggy, Log ended up quitting until the bugs could
@@ -400,6 +399,7 @@
           <a id="footer-discord" href="https://discord.gg/ntRb7Nw7Xt" target="_blank"><img class="footer-image" src="media/discord.png" alt="My Discord image link without hover"><img class="footer-image" id="ft-dc-hover" src="media/discord_2.png" alt="My Discord image link with hover"></a>
         </div></center>
     </center>
+    <!-- Accordion Script -->
     <script>
       var acc = document.getElementsByClassName("accordion");
       var i;

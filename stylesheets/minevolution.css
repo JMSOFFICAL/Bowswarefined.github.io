@@ -1,0 +1,9 @@
+.disclaimer {
+  text-decoration: red;
+  font-weight: 600;
+}
+
+.disclaimer::before {
+    content: "Disclaimer: ";
+    font-weight: 800;
+}
