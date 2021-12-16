@@ -1,5 +1,7 @@
 .linkbox {
     height: 100vh;
     width: 100vh;
+    background-color: #444;
+    color: #99ffff;
     border-radius: 10px;
 }
