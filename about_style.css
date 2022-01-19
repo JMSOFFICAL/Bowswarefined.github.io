@@ -78,11 +78,6 @@ html {
     border-radius: 20px;
 }
 
-.socials {
-    height: 50px;
-    width: 50px;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -116,23 +111,6 @@ h6 {
 
 a {
     color: inherit;
-}
-
-.WhatILike {
-    padding-bottom: 10px;
-    padding-bottom: 10px;
-    font-size: 25px;
-    font-family: 'Shadows Into Light', cursive;
-    color: white;
-    /* text-transform: uppercase; */
-}
-
-.desc {
-    font-size: 20px;
-    /* font-weight: bold; */
-    font-family: 'Shadows Into Light', cursive;
-    letter-spacing: 3px;
-    color: #03e9f4;
 }
 
 .content {

@@ -1,3 +1,25 @@
-p {
+.WhatILike {
+    padding-bottom: 10px;
+    padding-bottom: 10px;
     font-size: 25px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    /* text-transform: uppercase; */
+}
+
+.WhatIDid {
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    /* text-transform: uppercase; */
+}
+
+.desc {
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 3px;
+    color: #03e9f4;
 }
