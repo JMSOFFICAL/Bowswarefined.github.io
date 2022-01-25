@@ -514,6 +514,19 @@ function midSectionUpdates() {
         '<span class="close"><button onclick="clearMid()">&times;</button></span>' +
         '<p class="warning">Please report any bugs in the <a href="https://discord.gg/RqSwaQTZn4" target="_blank">Discord.</a></p>' +
         '<br>' +
+        '<p class="update-name">Fix It Felix!</p>' +
+        '<p class="update-disc">??/??/???? 0.06 BETA</p>' +
+        '<p class="update-bullet">Added a secret feature to one of the items below!</p>' +
+        //todo: finish these updates
+        '<p class="update-bullet">Added the News Ticker.</p>' +
+        '<p class="update-bullet">Fixed the Beta Detection System. Sorry about that guys!</p>' +
+        '<p class="update-bullet">Added a few new buildings!</p>' +
+        '<p class="update-bullet">Added the building display in the middle of the screen!</p>' +
+        '<p class="update-bullet">Cleaned up the Building Section.</p>' +
+        '<p class="update-bullet">New math now powers PPS due to a small but noticable error.</p>' +
+        '<p class="update-bullet">The upgrade token & related buildings have been enabled & locked behind gameplay!</p>' +
+        '<p class="update-bullet">Added a couple more stats!</p>' +
+        '<br>' +
         '<p class="update-name">Stats O\' Ramma</p>' +
         '<p class="update-disc">5/18/2021 0.05 RELEASE</p>' +
         '<p class="update-bullet">Updated the style of the page to flow better on all divices.</p>' +
@@ -526,7 +539,7 @@ function midSectionUpdates() {
         '<p class="update-bullet">Moved all settings buttons into the settings menu.</p>' +
         '<p class="update-bullet">Added three not-so-new buildings. Currently disabled due to issues.</p>' +
         '<p class="update-bullet">Added a new currency. Currently disabled due to issues.</p>' +
-        '<p class="update-bullet">Many shadow patches to style changes will be in order. Things don\'t look right enough yet.' +
+        '<p class="update-bullet">Many shadow patches to style changes will be in order. Things don\'t look right enough yet.</p>' +
         '<br>' +
         '<p class="update-name">Ole\' Gyzers\' Club</p>' +
         '<p class="update-disc">3/22/2021 0.04 BETA</p>' +
@@ -581,6 +594,7 @@ function midSectionStats() {
         `<p>All Time Purchased Upgrade Tokens: ${totalUpgradeTokens}</p>` +
         `<br>` +
         `<p>Pretzels Per Click: ${PPC}</p>` +
+        `<p>Pretzel Clicks: ${timesPrtzlClicked}</p>` +
         `<p>Pretzels Per Second: ${PPS}</p>` +
         `<p>Highest Pretzels Per Second: ${highestPPS}</p>`;
     document.getElementById("middleContent").innerHTML = statsDisplay
