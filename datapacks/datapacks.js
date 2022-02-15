@@ -7,6 +7,7 @@ function oneSixteenPacks() {
         '<a href="downloads/afk display v1.1.1 - 1.16.zip" download>Download Here!</a>' +
         '</div>';
     document.getElementById("middleContent").innerHTML = sixteenContent;
+    document.getElementById("v1.18").setAttribute('class', 'disabled');
     document.getElementById("v1.17").setAttribute('class', 'disabled');
     document.getElementById("v1.16").setAttribute('class', 'open');
     listener();
@@ -14,20 +15,11 @@ function oneSixteenPacks() {
 
 function oneSeventeenPacks() {
     seventeenContent =
-        '<button class="accordion">Dungeons<span class="right-plus">+</span></button>' +
-        '<div class="panel"><br> The Dungeons Datapack is a pack that revamps the vanilla minecraft dungeon. It is currently' +
-        'in beta stages and will be getting frequent updates.<br>' +
-        '<a href="" style="text-decoration-line: line-through;">Link Here!</a><br><span>' +
-        'Under a small pre-release revamp cus I had mild insparation to make this not suck. Release soon!' +
-        '</span>' +
-        '</div>' +
-        '<br><br>' +
-        '<button class="accordion">Loot Boxes<span class="right-plus">+</span></button>' +
+        '<button class="accordion">Loot Boxes Gen3<span class="right-plus">+</span></button>' +
         '<div class="panel">' +
-        'Loot Boxes Datapack adds a drop to fishing, mob kills, and more that generates random loot. Generation one' +
-        'allows fishing. Generation Two is currently in testing on my twitch channel with a hobbit series. This is where' +
-        'all updates are tested.<br>' +
-        '<a href="downloads/Gen One Lootboxes.zip" download>Download Here!</a>' +
+        'Loot Boxes Datapack adds a drop to fishing, mob kills, and more that generates random loot. Genetation Three' +
+        'is the latest version. Generation Two was never released due to many bugs & other issues.' +
+        '<a href="downloads/1.17/[1.17.x]Generation Three Vanilla+ Loot Boxes.zip" download>Download Here!</a>' +
         '</div>' +
         '<br><br>' +
         '<button class="accordion">Afk Display V1.1.1<span class="right-plus">+</span></button>' +
@@ -35,21 +27,38 @@ function oneSeventeenPacks() {
         'Afk Display V1.1.0 is a vanilla tweaks datapack. I added a small feature that i plan on expanding upon and have' +
         'released it in this update.<br>' +
         '<a href="datapacks/afk display v1.1.1 - 1.17.zip" download>Download Here!</a>' +
-        '</div>' +
-        '<br><br>' +
-        '<button class="accordion">Ender Fight Vanilla+ Pack V1.0.0<span class="right-plus">+</span></button>' +
-        '<div class="panel">' +
-        'The Ender Fight Vanilla+ Pack V1.0.0 is a pack that gives a new armor set and a new strategy to the ender dragon' +
-        'fight.' +
-        'Just one armor piece blows a full neterite set out of the water. However it is such a rare drop I wouldn\'t expect' +
-        'a drop any time soon.<br>' +
-        '<a href="downloads/[1.17.x]Ender Dragon Fight v1.0.0.zip" download>Download Here!</a>' +
         '</div>';
     document.getElementById("middleContent").innerHTML = seventeenContent;
+    document.getElementById("v1.18").setAttribute('class', 'disabled');
     document.getElementById("v1.17").setAttribute('class', 'open');
     document.getElementById("v1.16").setAttribute('class', 'disabled');
     listener();
 };
+
+function oneEighteenPacks() {
+    eighteenContent =
+    '<button class="accordion">Loot Boxes Gen3<span class="right-plus">+</span></button>' +
+    '<div class="panel">' +
+    'Loot Boxes Datapack adds a drop to fishing, mob kills, and more that generates random loot. Genetation Three' +
+    'is the latest version. Generation Two was never released due to many bugs & other issues.' +
+    '<a href="downloads/1.17/[1.17.x]Generation Three Vanilla+ Loot Boxes.zip" download>Download Here!</a>' +
+    '</div>' +
+    '<br><br>' +
+    '<button class="accordion">Better Dragon Fight Vanilla+ V1.0.0<span class="right-plus">+</span></button>' +
+    '<div class="panel">' +
+    'The Better Dragon Fight Vanilla+ Pack is a pack that gives a new armor set and a new strategy to the ender dragon' +
+    'fight.' +
+    'Just one armor piece blows a full neterite set out of the water. However it is such a rare drop I wouldn\'t expect' +
+    'a drop any time soon.<br>' +
+    '<a href="downloads/1.18/[1.18.x] Better Dragon Fight V1.zip" download>Download Here!</a>' +
+    '<a href="downloads/1.18/[1.18.x]Better Dragon Fight V1 NULLSCAPE COMPATIBILITY.zip" download>Download NullScape Compat Here!</a>' +
+    '</div>';
+    document.getElementById("middleContent").innerHTML = sixteenContent;
+    document.getElementById("v1.18").setAttribute('class', 'open');
+    document.getElementById("v1.17").setAttribute('class', 'disabled');
+    document.getElementById("v1.16").setAttribute('class', 'disabled');
+    listener();
+}
 
 function listener() {
     var acc = document.getElementsByClassName("accordion");
@@ -68,4 +77,4 @@ function listener() {
     }
 }
 
-window.onload = oneSeventeenPacks();
+window.onload = oneEighteenPacks();
