@@ -53,7 +53,7 @@ function oneEighteenPacks() {
     '<a href="downloads/1.18/[1.18.x] Better Dragon Fight V1.zip" download>Download Here!</a>' +
     '<a href="downloads/1.18/[1.18.x]Better Dragon Fight V1 NULLSCAPE COMPATIBILITY.zip" download>Download NullScape Compat Here!</a>' +
     '</div>';
-    document.getElementById("middleContent").innerHTML = sixteenContent;
+    document.getElementById("middleContent").innerHTML = eighteenContent;
     document.getElementById("v1.18").setAttribute('class', 'open');
     document.getElementById("v1.17").setAttribute('class', 'disabled');
     document.getElementById("v1.16").setAttribute('class', 'disabled');
